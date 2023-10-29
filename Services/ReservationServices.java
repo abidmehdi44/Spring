@@ -16,13 +16,13 @@ public class ReservationServices implements IReservationServices {
     IReservationRepository reservationRepository;
 
     @Override
-    public Reservation updateReservation (Reservation b)
+    public Reservation updateReservation (Reservation r)
     {
-        return reservationRepository.save(b);
+        return reservationRepository.save(r);
     }
 
     @Override
-    public Reservation getReservation(long idReservation) {
+    public Reservation getReservation(String idReservation) {
         return reservationRepository.findById(idReservation).orElse(null);
     }
 

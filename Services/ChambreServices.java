@@ -29,8 +29,8 @@ public class ChambreServices implements IChambreServices {
     }
 
     @Override
-    public Chambre getChambre(long idBloc) {
-        return chambreRepository.findById(idBloc).orElse(null);
+    public Chambre getChambre(long idChambre) {
+        return chambreRepository.findById(idChambre).orElse(null);
     }
 
     @Override

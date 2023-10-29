@@ -11,6 +11,6 @@ public interface IReservationServices {
 
     Reservation updateReservation (Reservation r);
 
-    Reservation getReservation (long idReservation);
+    Reservation getReservation (String idReservation);
 
 }
