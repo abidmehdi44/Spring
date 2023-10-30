@@ -34,7 +34,6 @@ public class FoyerRestController {
             existingFoyer.setNomFoyer(updatedFoyer.getNomFoyer());
             existingFoyer.setCapaciteFoyer(updatedFoyer.getCapaciteFoyer());
 
-
             return foyerServices.updateFoyer(existingFoyer);
         } else {
             return null;
@@ -47,7 +46,6 @@ public class FoyerRestController {
         Foyer existingFoyer = foyerServices.getFoyer(idFoyer);
 
         if (existingFoyer != null) {
-            // Supprimez le foyer en utilisant le service
             foyerServices.supprimerFoyer(idFoyer);
         } else {
             log.warn("N'existe pas");

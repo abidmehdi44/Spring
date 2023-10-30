@@ -13,7 +13,7 @@ public class Reservation {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String idReservation;
+    private long idReservation;
     private Date anneeUniversitaire;
     private boolean estValide;
 

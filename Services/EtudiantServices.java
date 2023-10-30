@@ -22,24 +22,22 @@ public class EtudiantServices implements IEtudiantServices {
 
     @Override
     public Etudiant updateEtudiant(Etudiant e) {
-        // Implement the update logic here
-        return null; // You need to implement this method properly
+        return etudiantRepository.save(e);
     }
 
     @Override
     public void supprimerEtudiant(long idEtudiant) {
-        // Implement the delete logic here
+        etudiantRepository.deleteById(idEtudiant);
     }
+
 
     @Override
     public Etudiant getEtudiant(long idEtudiant) {
-        // Implement the get logic here
-        return null; // You need to implement this method properly
+        return etudiantRepository.findById(idEtudiant).orElse(null);
     }
 
     @Override
     public List<Etudiant> getAllEtudiant() {
-        // Implement the logic to get all students here
-        return null; // You need to implement this method properly
+        return etudiantRepository.findAll();
     }
 }
