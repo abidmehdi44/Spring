@@ -53,4 +53,10 @@ public class BlocRestController {
             log.warn("N'existe pas");
         }
     }
+
+    @PutMapping("/affecterChambreBloc/{nomBloc}")
+    public Bloc affecterChambreBloc(@RequestBody List<Long> numChambre, @PathVariable String nomBloc){
+        return blocServices.affecterChambresABloc(numChambre,nomBloc);
+    }
+
 }

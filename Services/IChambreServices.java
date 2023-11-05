@@ -14,4 +14,5 @@ public interface IChambreServices {
 
     Chambre getChambre (long idChambre);
 
+
 }

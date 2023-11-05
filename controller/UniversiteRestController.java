@@ -39,4 +39,10 @@ public class UniversiteRestController {
             return null;
         }
     }
+
+    @PutMapping("/AffecterUnivFoyer/{id_Foyer}/{nomUniv}")
+    public Universite affecterUnivFoyer(@PathVariable long id_Foyer, @PathVariable String nomUniv) {
+        return  universiteServices.affecterFoyerAUniversite(id_Foyer, nomUniv);
+    }
+
 }

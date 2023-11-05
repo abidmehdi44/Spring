@@ -3,7 +3,6 @@ package com.example.abid_mehdi_4twin7.Services;
 
 import com.example.abid_mehdi_4twin7.entities.Foyer;
 import com.example.abid_mehdi_4twin7.repositories.IFoyerRepository;
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

@@ -20,6 +20,13 @@ public class FoyerRestController {
         return foyerServices.getAllFoyer();
     }
 
+
+    @GetMapping("/add/{id-foyer}")
+        public Foyer getFoyer(@PathVariable("id-foyer") long id){
+        return foyerServices.getFoyer(id);
+    }
+
+
     @PostMapping("/add")
     public Foyer addFoyer(@RequestBody Foyer f){
         return foyerServices.ajouterFoyer(f);
@@ -28,19 +35,14 @@ public class FoyerRestController {
     @PutMapping("/update/{idFoyer}")
     public Foyer updateFoyer(@PathVariable Long idFoyer, @RequestBody Foyer updatedFoyer) {
         Foyer existingFoyer = foyerServices.getFoyer(idFoyer);
-
         if (existingFoyer != null) {
-
             existingFoyer.setNomFoyer(updatedFoyer.getNomFoyer());
             existingFoyer.setCapaciteFoyer(updatedFoyer.getCapaciteFoyer());
-
             return foyerServices.updateFoyer(existingFoyer);
         } else {
             return null;
         }
     }
-
-
     @DeleteMapping("/delete/{idFoyer}")
     public void deleteFoyer(@PathVariable Long idFoyer) {
         Foyer existingFoyer = foyerServices.getFoyer(idFoyer);

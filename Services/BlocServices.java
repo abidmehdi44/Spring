@@ -1,9 +1,12 @@
 package com.example.abid_mehdi_4twin7.Services;
 
 import com.example.abid_mehdi_4twin7.entities.Bloc;
+import com.example.abid_mehdi_4twin7.entities.Chambre;
+import com.example.abid_mehdi_4twin7.repositories.IChamberRepository;
 import com.example.abid_mehdi_4twin7.repositories.IblocRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -13,6 +16,8 @@ public class BlocServices implements IBlocServices {
 
     final
     IblocRepository blocRepository;
+    final
+    IChamberRepository chamberRepository;
 
     @Override
     public Bloc ajouterBloc (Bloc b)
@@ -39,6 +44,17 @@ public class BlocServices implements IBlocServices {
     @Override
     public List<Bloc> getAllBloc() {
         return (List<Bloc>) blocRepository.findAll();
+    }
+
+    @Transactional
+    @Override
+    public Bloc affecterChambresABloc(List<Long> numChambre, String nomBloc) {
+        Bloc bloc = blocRepository.findByNomBloc(nomBloc);
+        for(Long id:numChambre){
+            Chambre chambre = chamberRepository.findById(id).orElse(null);
+            chambre.setBloc(bloc);
+        }
+        return bloc;
     }
 
 }
