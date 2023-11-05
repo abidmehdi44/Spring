@@ -59,4 +59,9 @@ public class BlocRestController {
         return blocServices.affecterChambresABloc(numChambre,nomBloc);
     }
 
+    @PutMapping("/affecterBlocAFoyerApi/{nomBloc}/{nomFoyer}")
+    public Bloc affecterBlocAFoyer( @PathVariable String nomBloc,@PathVariable String nomFoyer){
+        return blocServices.affecterBlocAFoyer(nomBloc,nomFoyer);
+    }
+
 }

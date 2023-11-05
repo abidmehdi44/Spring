@@ -4,8 +4,10 @@ import com.example.abid_mehdi_4twin7.Services.IReservationServices;
 import com.example.abid_mehdi_4twin7.entities.Reservation;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Date;
 import java.util.List;
 @Slf4j
 @RestController
@@ -24,15 +26,20 @@ public class ReservationRestController {
         Reservation existingReservation = reservationServices.getReservation(idReservation);
 
         if (existingReservation != null) {
-            // Mettez à jour les attributs de la réservation existante avec les nouvelles valeurs
             existingReservation.setDateReservation(updatedReservation.getDateReservation());
             existingReservation.setEstValide(updatedReservation.getEstValide());
             existingReservation.setEtudiants(updatedReservation.getEtudiants());
-
-            // Enregistrez la réservation mise à jour
             return reservationServices.updateReservation(existingReservation);
         } else {
             return null;
         }
+    }
+    @PutMapping("/ajouterReservationEtAssignerAChambreEtAEtudiant/{numChambre}/{cin}")
+    public Reservation ajouterReservationEtAssignerAChambreEtAEtudiantAPI (@RequestBody Reservation res,@PathVariable Long numChambre,@PathVariable long cin){
+        return reservationServices.ajouterReservationEtAssignerAChambreEtAEtudiant(res,numChambre,cin);
+    }
+    @GetMapping("/getReservationParAnneeUniversitaire/{debutAnnee}/{finAnnee}")
+    public long getReservationParAnneeUniversitaireApi(@PathVariable @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) Date debutAnnee, @PathVariable @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) Date finAnnee ){
+        return reservationServices.getReservationParAnneeUniversitaire(debutAnnee,finAnnee);
     }
 }

@@ -3,6 +3,7 @@ package com.example.abid_mehdi_4twin7.controller;
 import com.example.abid_mehdi_4twin7.Services.IChambreServices;
 import com.example.abid_mehdi_4twin7.entities.Chambre;
 import com.example.abid_mehdi_4twin7.entities.Bloc;
+import com.example.abid_mehdi_4twin7.entities.TypeChambre;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
@@ -29,18 +30,28 @@ public class ChambreRestController {
     @PutMapping("/update/{idChambre}")
     public Chambre updateChambre(@PathVariable Long idChambre, @RequestBody Chambre updatedChambre) {
         Chambre existingChambre = chambreServices.getChambre(idChambre);
-
         if (existingChambre != null) {
-            // Mettez à jour les attributs de la chambre existante avec les nouvelles valeurs
             existingChambre.setNumeroChambre(updatedChambre.getNumeroChambre());
             existingChambre.setTypeC(updatedChambre.getTypeC());
             existingChambre.setBloc(updatedChambre.getBloc());
             existingChambre.setReservations(updatedChambre.getReservations());
-
-            // Enregistrez la chambre mise à jour
             return chambreServices.updateChambre(existingChambre);
         } else {
             return null;
         }
     }
+    @GetMapping ("/getChambresParNomBloc/{nomBloc}")
+    public List<Chambre> getChambresParNomBlocApi(@PathVariable String nomBloc){
+        return chambreServices.getChambresParNomBloc(nomBloc);
+    }
+    @GetMapping ("/getChambresParNomBloc/{type}/{idBloc}")
+    public long nbChambreParTypeEtBloc(@PathVariable TypeChambre type, @PathVariable long idBloc){
+        return chambreServices.nbChambreParTypeEtBloc(type,idBloc);
+    }
+    @GetMapping ("/getChambresNonReserveParNomFoyerEtTypeChambre/{nomFoyer}/{type}")
+    public List<Chambre> getChambresNonReserveParNomFoyerEtTypeChambreApi(@PathVariable String nomFoyer,@PathVariable TypeChambre type){
+        return chambreServices.getChambresNonReserveParNomFoyerEtTypeChambre(nomFoyer,type);
+    }
+
+
 }
