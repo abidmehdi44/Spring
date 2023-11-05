@@ -14,7 +14,7 @@ public class Reservation {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long idReservation;
-    private Date anneeUniversitaire;
+    private Date dateReservation;
     private boolean estValide;
 
     @ManyToMany (mappedBy = "reservations" ,cascade = CascadeType.ALL)

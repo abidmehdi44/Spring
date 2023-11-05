@@ -25,7 +25,7 @@ public class ReservationRestController {
 
         if (existingReservation != null) {
             // Mettez à jour les attributs de la réservation existante avec les nouvelles valeurs
-            existingReservation.setAnneeUniversitaire(updatedReservation.getAnneeUniversitaire());
+            existingReservation.setDateReservation(updatedReservation.getDateReservation());
             existingReservation.setEstValide(updatedReservation.getEstValide());
             existingReservation.setEtudiants(updatedReservation.getEtudiants());
 

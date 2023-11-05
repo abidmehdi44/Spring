@@ -2,7 +2,9 @@ package com.example.abid_mehdi_4twin7.Services;
 
 import com.example.abid_mehdi_4twin7.entities.Bloc;
 import com.example.abid_mehdi_4twin7.entities.Chambre;
+import com.example.abid_mehdi_4twin7.entities.Foyer;
 import com.example.abid_mehdi_4twin7.repositories.IChamberRepository;
+import com.example.abid_mehdi_4twin7.repositories.IFoyerRepository;
 import com.example.abid_mehdi_4twin7.repositories.IblocRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -18,6 +20,8 @@ public class BlocServices implements IBlocServices {
     IblocRepository blocRepository;
     final
     IChamberRepository chamberRepository;
+    final
+    IFoyerRepository foyerRepository;
 
     @Override
     public Bloc ajouterBloc (Bloc b)
@@ -55,6 +59,20 @@ public class BlocServices implements IBlocServices {
             chambre.setBloc(bloc);
         }
         return bloc;
+    }
+
+    @Override
+    @Transactional
+    public Bloc affecterBlocAFoyer(String nomBloc, String nomFoyer) {
+        Bloc b = blocRepository.findByNomBloc(nomBloc);
+        Foyer f = foyerRepository.findByNomFoyer(nomFoyer);
+
+        if(b!=null && f!=null){
+            b.setFoyer(f);
+            return b;
+        }
+        return  null;
+
     }
 
 }

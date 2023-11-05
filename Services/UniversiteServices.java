@@ -15,9 +15,10 @@ import java.util.List;
 @Service
 public class UniversiteServices implements IUniversiteServices {
 
-    final IUniversiteRepository universiteRepository;
-
-    final IFoyerRepository foyerRepository;
+    final
+    IUniversiteRepository universiteRepository;
+    final
+    IFoyerRepository foyerRepository;
 
     @Override
     public Universite ajouterUniversite (Universite u)
@@ -45,6 +46,16 @@ public class UniversiteServices implements IUniversiteServices {
         universite.setF(foyer);
         //return universiteRepository.save(universite);
         return universite;
+    }
+
+    @Override
+    @Transactional
+    public Universite desaffecterFoyerAUniversite(long idFoyer, long idUniversite) {
+        Universite u = universiteRepository.findById(idUniversite).orElse(null);
+
+        if(u!=null && u.getF().getIdFoyer()==idFoyer )
+            u.setF(null);
+        return u;
     }
 
     @Override
