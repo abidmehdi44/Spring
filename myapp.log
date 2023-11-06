@@ -252,3 +252,131 @@ Caused by: org.springframework.data.mapping.PropertyReferenceException: No prope
 2023-11-06T00:51:26.269+01:00  WARN 13724 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2023-11-06T00:51:27.211+01:00  INFO 13724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2023-11-06T00:51:27.222+01:00  INFO 13724 --- [main] c.e.a.AbidMehdi4Twin7Application         : Started AbidMehdi4Twin7Application in 5.894 seconds (process running for 6.435)
+2023-11-06T01:12:48.874+01:00  INFO 13724 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-06T01:12:48.877+01:00  INFO 13724 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-06T01:12:48.884+01:00  INFO 13724 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-11-06T09:18:02.197+01:00  INFO 4752 --- [main] c.e.a.AbidMehdi4Twin7Application         : Starting AbidMehdi4Twin7Application using Java 17.0.8 with PID 4752 (C:\Users\mehdi\IdeaProjects\Abid_Mehdi_4TWIN7\target\classes started by Mehdi in C:\Users\mehdi\IdeaProjects\Abid_Mehdi_4TWIN7)
+2023-11-06T09:18:02.199+01:00  INFO 4752 --- [main] c.e.a.AbidMehdi4Twin7Application         : No active profile set, falling back to 1 default profile: "default"
+2023-11-06T09:18:03.179+01:00  INFO 4752 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-06T09:18:03.279+01:00  INFO 4752 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 89 ms. Found 6 JPA repository interfaces.
+2023-11-06T09:18:03.847+01:00  INFO 4752 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-06T09:18:03.858+01:00  INFO 4752 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-06T09:18:03.858+01:00  INFO 4752 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-11-06T09:18:03.951+01:00  INFO 4752 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-06T09:18:03.951+01:00  INFO 4752 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1686 ms
+2023-11-06T09:18:04.097+01:00  INFO 4752 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-06T09:18:04.160+01:00  INFO 4752 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-11-06T09:18:04.162+01:00  INFO 4752 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-11-06T09:18:04.333+01:00  INFO 4752 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-11-06T09:18:04.497+01:00  INFO 4752 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-06T09:18:04.514+01:00  INFO 4752 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-06T09:18:04.690+01:00  INFO 4752 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3e2d44f3
+2023-11-06T09:18:04.691+01:00  INFO 4752 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-06T09:18:04.748+01:00  WARN 4752 --- [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.0 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 5.7.0. Check the community dialects project for available legacy versions.
+2023-11-06T09:18:05.021+01:00  INFO 4752 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-11-06T09:18:05.765+01:00  INFO 4752 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-06T09:18:06.003+01:00  INFO 4752 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-06T09:18:06.589+01:00  WARN 4752 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-06T09:18:07.348+01:00  INFO 4752 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-06T09:18:07.355+01:00  INFO 4752 --- [main] c.e.a.AbidMehdi4Twin7Application         : Started AbidMehdi4Twin7Application in 5.734 seconds (process running for 6.564)
+2023-11-06T09:18:58.853+01:00  INFO 4752 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-06T09:18:58.854+01:00  INFO 4752 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-06T09:18:58.857+01:00  INFO 4752 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-11-06T09:18:59.634+01:00  WARN 4752 --- [http-nio-8080-exec-8] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.example.abid_mehdi_4twin7.controller.UniversiteRestController
+2023-11-06T09:18:59.939+01:00  WARN 4752 --- [http-nio-8080-exec-8] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.example.abid_mehdi_4twin7.controller.ReservationRestController
+2023-11-06T09:18:59.968+01:00  WARN 4752 --- [http-nio-8080-exec-8] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.example.abid_mehdi_4twin7.controller.FoyerRestController
+2023-11-06T09:19:00.003+01:00  WARN 4752 --- [http-nio-8080-exec-8] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.example.abid_mehdi_4twin7.controller.EtudiantRestController
+2023-11-06T09:19:00.013+01:00  WARN 4752 --- [http-nio-8080-exec-8] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.example.abid_mehdi_4twin7.controller.ChambreRestController
+2023-11-06T09:19:00.035+01:00  WARN 4752 --- [http-nio-8080-exec-8] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.example.abid_mehdi_4twin7.controller.BlocRestController
+2023-11-06T09:19:00.178+01:00  INFO 4752 --- [http-nio-8080-exec-8] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 626 ms
+2023-11-06T09:52:36.305+01:00  INFO 4752 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-06T09:52:36.308+01:00  INFO 4752 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-06T09:52:36.314+01:00  INFO 4752 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-11-06T09:52:40.948+01:00  INFO 10576 --- [main] c.e.a.AbidMehdi4Twin7Application         : Starting AbidMehdi4Twin7Application using Java 17.0.8 with PID 10576 (C:\Users\mehdi\IdeaProjects\Abid_Mehdi_4TWIN7\target\classes started by Mehdi in C:\Users\mehdi\IdeaProjects\Abid_Mehdi_4TWIN7)
+2023-11-06T09:52:40.950+01:00  INFO 10576 --- [main] c.e.a.AbidMehdi4Twin7Application         : No active profile set, falling back to 1 default profile: "default"
+2023-11-06T09:52:41.612+01:00  INFO 10576 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-06T09:52:41.711+01:00  INFO 10576 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 89 ms. Found 6 JPA repository interfaces.
+2023-11-06T09:52:42.200+01:00  INFO 10576 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-06T09:52:42.209+01:00  INFO 10576 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-06T09:52:42.210+01:00  INFO 10576 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-11-06T09:52:42.298+01:00  INFO 10576 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-06T09:52:42.298+01:00  INFO 10576 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1310 ms
+2023-11-06T09:52:42.456+01:00  INFO 10576 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-06T09:52:42.509+01:00  INFO 10576 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-11-06T09:52:42.511+01:00  INFO 10576 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-11-06T09:52:42.640+01:00  INFO 10576 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-11-06T09:52:42.767+01:00  INFO 10576 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-06T09:52:42.783+01:00  INFO 10576 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-06T09:52:42.973+01:00  INFO 10576 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4586a8aa
+2023-11-06T09:52:42.975+01:00  INFO 10576 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-06T09:52:43.038+01:00  WARN 10576 --- [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.0 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 5.7.0. Check the community dialects project for available legacy versions.
+2023-11-06T09:52:43.318+01:00  INFO 10576 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-11-06T09:52:44.052+01:00  INFO 10576 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-06T09:52:44.678+01:00  INFO 10576 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-06T09:52:45.273+01:00  WARN 10576 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-06T09:52:46.001+01:00  INFO 10576 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-06T09:52:46.009+01:00  INFO 10576 --- [main] c.e.a.AbidMehdi4Twin7Application         : Started AbidMehdi4Twin7Application in 5.445 seconds (process running for 6.112)
+2023-11-06T09:53:28.220+01:00  INFO 10576 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-06T09:53:28.474+01:00  INFO 10576 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-06T09:53:28.481+01:00  INFO 10576 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-11-06T09:53:30.893+01:00  INFO 17232 --- [main] c.e.a.AbidMehdi4Twin7Application         : Starting AbidMehdi4Twin7Application using Java 17.0.8 with PID 17232 (C:\Users\mehdi\IdeaProjects\Abid_Mehdi_4TWIN7\target\classes started by Mehdi in C:\Users\mehdi\IdeaProjects\Abid_Mehdi_4TWIN7)
+2023-11-06T09:53:30.895+01:00  INFO 17232 --- [main] c.e.a.AbidMehdi4Twin7Application         : No active profile set, falling back to 1 default profile: "default"
+2023-11-06T09:53:31.563+01:00  INFO 17232 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-06T09:53:31.644+01:00  INFO 17232 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 6 JPA repository interfaces.
+2023-11-06T09:53:32.130+01:00  INFO 17232 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-06T09:53:32.141+01:00  INFO 17232 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-06T09:53:32.141+01:00  INFO 17232 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-11-06T09:53:32.233+01:00  INFO 17232 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-06T09:53:32.233+01:00  INFO 17232 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1298 ms
+2023-11-06T09:53:32.367+01:00  INFO 17232 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-06T09:53:32.420+01:00  INFO 17232 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-11-06T09:53:32.423+01:00  INFO 17232 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-11-06T09:53:32.545+01:00  INFO 17232 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-11-06T09:53:32.664+01:00  INFO 17232 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-06T09:53:32.678+01:00  INFO 17232 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-06T09:53:32.821+01:00  INFO 17232 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@749baa0c
+2023-11-06T09:53:32.823+01:00  INFO 17232 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-06T09:53:32.871+01:00  WARN 17232 --- [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.0 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 5.7.0. Check the community dialects project for available legacy versions.
+2023-11-06T09:53:33.123+01:00  INFO 17232 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-11-06T09:53:33.839+01:00  INFO 17232 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-06T09:53:34.361+01:00  INFO 17232 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-06T09:53:34.973+01:00  WARN 17232 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-06T09:53:35.794+01:00  INFO 17232 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-06T09:53:35.804+01:00  INFO 17232 --- [main] c.e.a.AbidMehdi4Twin7Application         : Started AbidMehdi4Twin7Application in 5.369 seconds (process running for 6.03)
+2023-11-06T09:55:03.258+01:00  INFO 17232 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-06T09:55:03.263+01:00  INFO 17232 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-06T09:55:03.271+01:00  INFO 17232 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-11-06T09:55:05.259+01:00  INFO 19232 --- [main] c.e.a.AbidMehdi4Twin7Application         : Starting AbidMehdi4Twin7Application using Java 17.0.8 with PID 19232 (C:\Users\mehdi\IdeaProjects\Abid_Mehdi_4TWIN7\target\classes started by Mehdi in C:\Users\mehdi\IdeaProjects\Abid_Mehdi_4TWIN7)
+2023-11-06T09:55:05.262+01:00  INFO 19232 --- [main] c.e.a.AbidMehdi4Twin7Application         : No active profile set, falling back to 1 default profile: "default"
+2023-11-06T09:55:06.033+01:00  INFO 19232 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-06T09:55:06.126+01:00  INFO 19232 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 84 ms. Found 6 JPA repository interfaces.
+2023-11-06T09:55:06.643+01:00  INFO 19232 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-06T09:55:06.654+01:00  INFO 19232 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-06T09:55:06.654+01:00  INFO 19232 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-11-06T09:55:06.751+01:00  INFO 19232 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-06T09:55:06.752+01:00  INFO 19232 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1446 ms
+2023-11-06T09:55:06.911+01:00  INFO 19232 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-06T09:55:06.960+01:00  INFO 19232 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-11-06T09:55:06.963+01:00  INFO 19232 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-11-06T09:55:07.096+01:00  INFO 19232 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-11-06T09:55:07.221+01:00  INFO 19232 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-06T09:55:07.236+01:00  INFO 19232 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-06T09:55:07.393+01:00  INFO 19232 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3dc82e6a
+2023-11-06T09:55:07.395+01:00  INFO 19232 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-06T09:55:07.455+01:00  WARN 19232 --- [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.0 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 5.7.0. Check the community dialects project for available legacy versions.
+2023-11-06T09:55:07.708+01:00  INFO 19232 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-11-06T09:55:08.404+01:00  INFO 19232 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-06T09:55:08.591+01:00  INFO 19232 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-06T09:55:09.176+01:00  WARN 19232 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-06T09:55:09.936+01:00  INFO 19232 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-06T09:55:09.944+01:00  INFO 19232 --- [main] c.e.a.AbidMehdi4Twin7Application         : Started AbidMehdi4Twin7Application in 5.06 seconds (process running for 5.617)
+2023-11-06T10:02:58.130+01:00  INFO 19232 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-06T10:02:58.131+01:00  INFO 19232 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-06T10:02:58.134+01:00  INFO 19232 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-11-06T10:03:30.536+01:00  WARN 19232 --- [http-nio-8080-exec-6] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.example.abid_mehdi_4twin7.controller.UniversiteRestController
+2023-11-06T10:03:31.017+01:00  WARN 19232 --- [http-nio-8080-exec-6] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.example.abid_mehdi_4twin7.controller.ReservationRestController
+2023-11-06T10:03:31.127+01:00  WARN 19232 --- [http-nio-8080-exec-6] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.example.abid_mehdi_4twin7.controller.FoyerRestController
+2023-11-06T10:03:31.174+01:00  WARN 19232 --- [http-nio-8080-exec-6] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.example.abid_mehdi_4twin7.controller.EtudiantRestController
+2023-11-06T10:03:31.190+01:00  WARN 19232 --- [http-nio-8080-exec-6] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.example.abid_mehdi_4twin7.controller.ChambreRestController
+2023-11-06T10:03:31.222+01:00  WARN 19232 --- [http-nio-8080-exec-6] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.example.abid_mehdi_4twin7.controller.BlocRestController
+2023-11-06T10:03:31.459+01:00  INFO 19232 --- [http-nio-8080-exec-6] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 1015 ms
