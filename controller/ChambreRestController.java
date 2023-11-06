@@ -2,7 +2,6 @@ package com.example.abid_mehdi_4twin7.controller;
 
 import com.example.abid_mehdi_4twin7.Services.IChambreServices;
 import com.example.abid_mehdi_4twin7.entities.Chambre;
-import com.example.abid_mehdi_4twin7.entities.Bloc;
 import com.example.abid_mehdi_4twin7.entities.TypeChambre;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

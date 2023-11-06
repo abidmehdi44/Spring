@@ -37,6 +37,10 @@ public class UniversiteServices implements IUniversiteServices {
     public Universite getUniversite(long idUniversite) {
         return universiteRepository.findById(idUniversite).orElse(null);
     }
+    @Override
+    public List<Universite> getAllUniversite() {
+        return (List<Universite>) universiteRepository.findAll();
+    }
 
     @Transactional //kn nzidou hethy nbadlou el return madch save twaly traja3 el object toul
     @Override
@@ -51,16 +55,9 @@ public class UniversiteServices implements IUniversiteServices {
     @Override
     @Transactional
     public Universite desaffecterFoyerAUniversite(long idFoyer, long idUniversite) {
-        Universite u = universiteRepository.findById(idUniversite).orElse(null);
-
-        if(u!=null && u.getF().getIdFoyer()==idFoyer )
-            u.setF(null);
-        return u;
+        Universite universite = universiteRepository.findById(idUniversite).orElse(null);
+        if(universite!=null && universite.getF().getIdFoyer()==idFoyer )
+            universite.setF(null);
+        return universite;
     }
-
-    @Override
-    public List<Universite> getAllUniversite() {
-        return (List<Universite>) universiteRepository.findAll();
-    }
-
 }

@@ -50,7 +50,6 @@ public class EtudiantRestController {
     public void deleteEtudiant(@PathVariable Long idEtudiant) {
         Etudiant existingEtudiant = etudiantServices.getEtudiant(idEtudiant);
         if (existingEtudiant != null) {
-            // Supprimez l'étudiant en utilisant le service
             etudiantServices.supprimerEtudiant(idEtudiant);
         } else {
             log.warn("N'existe pas");

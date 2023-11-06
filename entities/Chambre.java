@@ -15,6 +15,7 @@ public class Chambre {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long idChambre;
+
     private long numeroChambre;
     private TypeChambre typeC;
 

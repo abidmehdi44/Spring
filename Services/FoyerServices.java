@@ -3,6 +3,7 @@ package com.example.abid_mehdi_4twin7.Services;
 
 import com.example.abid_mehdi_4twin7.entities.Foyer;
 import com.example.abid_mehdi_4twin7.repositories.IFoyerRepository;
+import com.example.abid_mehdi_4twin7.repositories.IblocRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +16,8 @@ public class FoyerServices implements IFoyerServices {
 
     final
     IFoyerRepository foyerRepository;
+    final
+    IblocRepository blocRepository;
 
 
     @Override
@@ -46,4 +49,11 @@ public class FoyerServices implements IFoyerServices {
     public List<Foyer> getAllFoyer() {
         return (List<Foyer>) foyerRepository.findAll();
     }
+
+    @Override
+    public Foyer ajouterFoyeretAffecterUniv(Foyer f, Long idUniv) {
+        return foyerRepository.save(f);
+    }
+
+
 }

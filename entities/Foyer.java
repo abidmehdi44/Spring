@@ -16,7 +16,7 @@ public class Foyer {
     private String nomFoyer;
     private long capaciteFoyer;
 
-    @OneToMany(mappedBy = "foyer", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "foyer", cascade = {CascadeType.PERSIST,CascadeType.REMOVE})
     private Set<Bloc> blocs;
 
     @OneToOne(mappedBy = "f")

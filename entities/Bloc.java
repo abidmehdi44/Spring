@@ -12,14 +12,15 @@ public class Bloc {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long idBloc;
+
     private String nomBloc;
     private long capaciteBloc;
 
     @ManyToOne
-    @JoinColumn(name = "foyer_id") // Specify the foreign key column name
+    @JoinColumn(name = "foyer_id")
     private Foyer foyer;
 
-    @OneToMany(mappedBy="bloc")
+    @OneToMany(mappedBy="bloc",/*fetch = FetchType.EAGER ,*/cascade = {CascadeType.PERSIST,CascadeType.REMOVE})
     private Set<Chambre> chambres;
 
 }

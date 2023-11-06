@@ -3,6 +3,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.Set;
 
@@ -16,6 +17,11 @@ public class Reservation {
     private long idReservation;
     private Date dateReservation;
     private boolean estValide;
+
+    @Temporal(TemporalType.DATE)
+    private LocalDate debutanneeUniversitaire;
+    @Temporal(TemporalType.DATE)
+    private LocalDate finanneeUniversitaire;
 
     @ManyToMany (mappedBy = "reservations" ,cascade = CascadeType.ALL)
     private Set<Etudiant> etudiants;
